@@ -39,16 +39,9 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-		<!--  MySQL Database Connection Driver  -->
-		<!-- 		<dependency> -->
-		<!-- 			<groupId>mysql</groupId> -->
-		<!-- 			<artifactId>mysql-connector-java</artifactId> -->
-		<!-- 		</dependency> -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.30</version>
-			<!--  Replace with the desired version  -->
 		</dependency>
 		<!--  Spring Data JPA for interacting with MySQL database  -->
 		<dependency>
@@ -66,6 +59,15 @@
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.2.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.36</version> <!-- Check for the latest version -->
+			<scope>provided</scope>
+		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
@@ -78,6 +80,7 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.36</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
@@ -90,6 +93,7 @@
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.36</version>
 						</exclude>
 					</excludes>
 				</configuration>
